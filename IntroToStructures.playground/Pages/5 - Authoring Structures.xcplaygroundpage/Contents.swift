@@ -31,10 +31,28 @@ import Foundation
  Remember to *commit* and *push* your work regularly – at a minimum after defining each structure.
  
  */
-// Begin your work here...
+// Begin your work here... Spehere, cone, circle, triangle
+Double.pi
 
+struct Triangle {
+    
+    // Properties for perimeter
+    var sideLengthA: Double
+    var sideLenghtB: Double
+    var sideLengthC: Double
+    
+    // Perimeter
+    var trianglePerimeter: Double {
+        return sideLenghtB + sideLengthA + sideLengthC
+    }
 
+}
 
+// Make trangle
+
+var trangle = Triangle(sideLengthA: 4, sideLenghtB: 5, sideLengthC: 3)
+
+trangle.trianglePerimeter
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */

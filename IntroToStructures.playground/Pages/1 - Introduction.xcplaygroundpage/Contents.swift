@@ -113,7 +113,17 @@ studentB.isScholarBasedOn(threshold: 80)
 
 // Is the student a scholar based on a 90% threshold?
 studentB.isScholarBasedOn(threshold: 90)
- 
+
+// One more student
+let studentC = Student(grades: [0, 95, 50])
+studentC.currentOverallAverage
+print(studentC.report)
+
+// Is the student a scholar based on an 80% threshold?
+studentC.isScholarBasedOn(threshold: 80)
+
+// Is the student a scholar based on a 90% threshold?
+studentC.isScholarBasedOn(threshold: 90)
 /*:
  
  ## Acknowledgements
