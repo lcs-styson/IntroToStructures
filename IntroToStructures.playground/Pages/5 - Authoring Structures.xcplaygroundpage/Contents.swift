@@ -96,6 +96,33 @@ corcle.perimeter
 
 // Make area
 corcle.area
+
+// Sphere time
+struct Sphere {
+    
+    // Sphere deets
+    var radius: Double
+    
+    // Perimeter points
+    var perimeter: Double {
+        return 4 * Double.pi * radius
+    }
+    
+    // Area article
+    var area: Double {
+        return (4.0/3.0) * Double.pi * pow(radius, 3)
+    }
+    
+}
+
+// Make Sphere
+var spear = Sphere(radius: 6)
+
+// Make Perimeter
+spear.perimeter
+
+// Make area
+spear.area
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
