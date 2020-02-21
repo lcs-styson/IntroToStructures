@@ -34,6 +34,7 @@ import Foundation
 // Begin your work here... Spehere, cone, circle, triangle
 Double.pi
 
+// begin with a triangle
 struct Triangle {
     
     // Properties for perimeter
@@ -68,6 +69,8 @@ trangle.perimeter
 
 // Make Area
 trangle.area
+
+
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
