@@ -42,17 +42,32 @@ struct Triangle {
     var sideLengthC: Double
     
     // Perimeter
-    var trianglePerimeter: Double {
+    var perimeter: Double {
         return sideLenghtB + sideLengthA + sideLengthC
+        
     }
+    
+    // Properties for area
+    var base: Double
+    var height: Double
+    
+    // Area
+    var area: Double {
+       return (1.0/2.0) * base * height
+    }
+
 
 }
 
 // Make trangle
 
-var trangle = Triangle(sideLengthA: 4, sideLenghtB: 5, sideLengthC: 3)
+var trangle = Triangle(sideLengthA: 3, sideLenghtB: 4, sideLengthC: 5, base: 6, height: 6)
 
-trangle.trianglePerimeter
+// Make Perimeter
+trangle.perimeter
+
+// Make Area
+trangle.area
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
