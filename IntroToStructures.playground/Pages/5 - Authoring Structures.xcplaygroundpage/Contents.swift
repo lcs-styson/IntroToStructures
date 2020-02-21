@@ -70,7 +70,32 @@ trangle.perimeter
 // Make Area
 trangle.area
 
+// Next we'll make a circle
+struct Circle {
+    
+    // Give it a radius
+    var radius: Double
+    
+    // Perimeter parameters
+    var perimeter: Double {
+        return 2 * Double.pi * radius
+    }
+    
+    // Area
+    var area: Double {
+        return Double.pi * pow(radius, 2)
+    }
+    
+}
 
+// Make circle
+var corcle = Circle(radius: 5)
+
+// Make Perimeter
+corcle.perimeter
+
+// Make area
+corcle.area
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
