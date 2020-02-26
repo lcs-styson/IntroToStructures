@@ -103,13 +103,13 @@ struct Sphere {
     // Sphere deets
     var radius: Double
     
-    // Perimeter points
-    var perimeter: Double {
+    // Surface Area spots
+    var surfaceArea: Double {
         return 4 * Double.pi * radius
     }
     
-    // Area article
-    var area: Double {
+    // volume volumetrics
+    var volume: Double {
         return (4.0/3.0) * Double.pi * pow(radius, 3)
     }
     
@@ -118,11 +118,46 @@ struct Sphere {
 // Make Sphere
 var spear = Sphere(radius: 6)
 
-// Make Perimeter
-spear.perimeter
+// Make Surface area
+spear.surfaceArea
 
-// Make area
-spear.area
+// Make volume
+spear.volume
+
+// And finally a cone
+
+struct Cone {
+    
+    // Cone components
+    var slant: Double
+    var height: Double
+    var radius: Double
+    
+    // Surface Area Specifications
+    var surfaceAreaOfBase: Double {
+        return Double.pi * pow(radius, 2)
+    }
+    
+    var surfaceAreaOfLateralSurface: Double {
+        return Double.pi * slant * radius
+    }
+    
+    var totalSurfaceArea: Double {
+        return surfaceAreaOfBase + surfaceAreaOfLateralSurface
+    }
+    
+    var volume: Double {
+        return (Double.pi * pow(radius, 2) * height)/3
+    }
+}
+
+var corn = Cone(slant: 5, height: 6, radius: 9)
+
+//Make surface area do
+corn.totalSurfaceArea
+
+// Do volume make now
+corn.volume
 /*:
  [Previous: Area Example - Rectangle](@previous) | Page 4
  */
